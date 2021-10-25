@@ -5,19 +5,17 @@
           fetch="https://github.com/RONIN808" />
 
   <!-- Sync trees -->
-        <project path="device/asus/sdm660-common" name="asus_sdm660common_snowcone" remote="RONIN808" revision="12_4.19" clone-depth="1" />
-        <project path="device/asus/X00TD" name="device_asus_X00TD" remote="RONIN808" revision="KangOS" clone-depth="1" />
-        <project path="vendor/asus" name="vendor_asus_snowcone" remote="RONIN808" revision="12_4.19" clone-depth="1" />
-        <project path="kernel/asus/sdm660" name="kernel_asus_X00T_4.19" remote="RONIN808" revision="4.19" clone-depth="1" />
+        <project path="device/asus/sdm660-common" name="android_asus_sdm660common_a12" remote="RONIN808" revision="master" clone-depth="1" />
+        <project path="device/asus/X00TD" name="device_asus_X00TD" remote="RONIN808" revision="awaken" clone-depth="1" />
+        <project path="vendor/asus" name="vendor_asus_a12" remote="RONIN808" revision="master" clone-depth="1" />
+        <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-1" remote="RONIN808" revision="eas" clone-depth="1" />
           
   <!-- Remove -->
-        <remove-project name="android_hardware_qcom_display" />
-        <remove-project name="android_hardware_qcom_audio" />
-        <remove-project name="android_hardware_qcom_media" />  
+        <remove-project name="system/netd" />
+        <remove-project name="system/bpf" />
           
   <!-- Clone Hals -->        
-        <project path="hardware/qcom-caf/sdm660/audio" name="hw_audio" remote="RONIN808" revision="eleven_caf_msm8998" clone-depth="1" />
-        <project path="hardware/qcom-caf/sdm660/display" name="hw_display" remote="RONIN808" revision="eleven_caf_msm8998" clone-depth="1" />
-        <project path="hardware/qcom-caf/sdm660/media" name="hw_media" remote="RONIN808" revision="eleven_caf_msm8998" clone-depth="1" />  
-
+        <project path="system/netd" name="android_system_netd" remote="RONIN808" revision="12" clone-depth="1" />
+        <project path="system/bpf" name="android_system_bpf" remote="RONIN808" revision="12" clone-depth="1" />
+        
 </manifest>
